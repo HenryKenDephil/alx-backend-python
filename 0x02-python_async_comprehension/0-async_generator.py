@@ -2,9 +2,9 @@
 # coroutine function that takes no arguments
 import asyncio
 import random
-from typing import Generator
+from typing import Generator, AsyncGenerator
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     '''
     a function that takes no arguments
     yield a random number between 0 and 10
